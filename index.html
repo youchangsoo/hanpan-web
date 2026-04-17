@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한판(HANPAN) - 격투기 원데이클래스 플랫폼</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, 'Malgun Gothic', sans-serif; color: #222; line-height: 1.7; }
+    .hero { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); color: #fff; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 42px; font-weight: 900; margin-bottom: 12px; }
+    .hero p { font-size: 18px; color: rgba(255,255,255,0.8); }
+    .hero .badge { display: inline-block; margin-top: 20px; background: rgba(255,215,0,0.2); border: 1px solid rgba(255,215,0,0.4); color: #ffd700; padding: 8px 20px; border-radius: 30px; font-weight: 700; }
+    .section { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+    .section h2 { font-size: 26px; font-weight: 800; margin-bottom: 20px; color: #111; border-bottom: 3px solid #e63950; display: inline-block; padding-bottom: 4px; }
+    .section p, .section li { font-size: 15px; color: #444; margin-bottom: 8px; }
+    .section ul { padding-left: 20px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
+    .feature-card { background: #f8f9fa; border-radius: 16px; padding: 24px; text-align: center; }
+    .feature-card .emoji { font-size: 36px; margin-bottom: 10px; }
+    .feature-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .feature-card p { font-size: 13px; color: #666; }
+    .price-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+    .price-table th, .price-table td { padding: 12px 16px; border: 1px solid #eee; text-align: left; font-size: 14px; }
+    .price-table th { background: #1a1a2e; color: #fff; }
+    .price-table tr:nth-child(even) { background: #fafafa; }
+    .info-box { background: #f0f4ff; border-radius: 12px; padding: 20px; margin-top: 16px; }
+    .info-box p { font-size: 14px; color: #333; margin-bottom: 4px; }
+    .refund-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+    .refund-table th, .refund-table td { padding: 10px 14px; border: 1px solid #eee; font-size: 14px; }
+    .refund-table th { background: #e63950; color: #fff; }
+    footer { background: #f5f5f5; padding: 40px 24px; text-align: center; font-size: 13px; color: #888; }
+    footer .biz-info { max-width: 600px; margin: 0 auto; text-align: left; }
+    footer .biz-info p { margin-bottom: 2px; }
+    a { color: #3b7aff; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>한판 HANPAN</h1>
+    <p>격투기 원데이클래스 & 커뮤니티 플랫폼</p>
+    <div class="badge">Google Play 출시 예정</div>
+  </div>
+
+  <!-- 서비스 소개 -->
+  <div class="section">
+    <h2>서비스 소개</h2>
+    <p>한판(HANPAN)은 격투기·무술 원데이클래스, 클럽, 챌린지를 한 곳에서 만날 수 있는 플랫폼입니다.</p>
+    <div class="features">
+      <div class="feature-card">
+        <div class="emoji">🥊</div>
+        <h3>원데이클래스</h3>
+        <p>킥복싱, 주짓수, 무에타이 등 다양한 격투기 수업</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">👥</div>
+        <h3>클럽</h3>
+        <p>같은 관심사의 멤버들과 정기 모임</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🔥</div>
+        <h3>챌린지</h3>
+        <p>목표를 세우고 함께 도전하는 챌린지</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">💬</div>
+        <h3>커뮤니티</h3>
+        <p>그룹 채팅, 피드, DM으로 소통</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상품/서비스 및 가격 -->
+  <div class="section">
+    <h2>상품 및 가격</h2>
+    <table class="price-table">
+      <thead>
+        <tr><th>상품</th><th>설명</th><th>가격</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>원데이클래스 수강권</td><td>격투기/무술 1회 수업 참가</td><td>10,000원 ~ 100,000원 (강사 설정)</td></tr>
+        <tr><td>번개수련</td><td>무료 모임 (함께 운동할 멤버 모집)</td><td>무료</td></tr>
+        <tr><td>프리미엄 구독 (월간)</td><td>클럽·챌린지 무제한, AI 아바타, 뱃지, DM</td><td>4,900원/월</td></tr>
+        <tr><td>프리미엄 구독 (연간)</td><td>월간과 동일 혜택, 20% 할인</td><td>46,800원/년 (월 3,900원)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 이용약관 -->
+  <div class="section" id="terms">
+    <h2>이용약관</h2>
+    <p><strong>제1조 (목적)</strong><br>본 약관은 한판(HANPAN)(이하 "회사")이 제공하는 모바일 애플리케이션 서비스(이하 "서비스")의 이용 조건 및 절차, 회사와 회원 간의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+
+    <p><strong>제2조 (용어의 정의)</strong><br>
+    1. "서비스"란 회사가 제공하는 격투기·무술 원데이클래스 예약, 클럽, 챌린지, 커뮤니티 등의 플랫폼 서비스를 말합니다.<br>
+    2. "회원"이란 본 약관에 동의하고 서비스에 가입한 자를 말합니다.<br>
+    3. "호스트"란 서비스를 통해 클래스·모임을 개설하는 회원을 말합니다.</p>
+
+    <p><strong>제3조 (약관의 효력 및 변경)</strong><br>
+    1. 본 약관은 서비스 화면에 게시하거나 기타의 방법으로 회원에게 공지함으로써 효력이 발생합니다.<br>
+    2. 회사는 관련 법령을 위배하지 않는 범위에서 약관을 개정할 수 있으며, 변경 시 7일 전 공지합니다.</p>
+
+    <p><strong>제4조 (서비스의 제공 및 변경)</strong><br>
+    1. 회사는 원데이클래스 예약, 클럽·챌린지 운영, 채팅, 결제 등의 서비스를 제공합니다.<br>
+    2. 회사는 서비스의 내용을 변경할 수 있으며, 변경 시 사전에 공지합니다.</p>
+
+    <p><strong>제5조 (회원가입 및 탈퇴)</strong><br>
+    1. 회원가입은 이메일, 카카오, 구글 계정을 통해 가능합니다.<br>
+    2. 회원은 언제든지 탈퇴를 요청할 수 있으며, 회사는 즉시 처리합니다.</p>
+
+    <p><strong>제6조 (회원의 의무)</strong><br>
+    1. 회원은 타인의 정보를 도용하거나 허위 정보를 등록해서는 안 됩니다.<br>
+    2. 회원은 서비스 이용 시 관련 법령과 본 약관을 준수해야 합니다.<br>
+    3. 회원은 외부 결제 유도, 사기 행위 등을 해서는 안 됩니다.</p>
+
+    <p><strong>제7조 (서비스 이용 제한)</strong><br>
+    회사는 회원이 본 약관을 위반하거나 서비스의 정상적인 운영을 방해한 경우 서비스 이용을 제한하거나 회원 자격을 정지할 수 있습니다.</p>
+
+    <p><strong>제8조 (지적재산권)</strong><br>
+    서비스에 포함된 콘텐츠에 대한 저작권 및 지적재산권은 회사에 귀속됩니다.</p>
+
+    <p><strong>제9조 (면책조항)</strong><br>
+    1. 회사는 천재지변 등 불가항력으로 인한 서비스 중단에 대해 책임을 지지 않습니다.<br>
+    2. 회사는 회원 간 거래에서 발생하는 분쟁에 대해 개입 의무를 지지 않습니다.</p>
+
+    <p><strong>제10조 (분쟁 해결)</strong><br>
+    본 약관에 관한 분쟁은 대한민국 법률에 따르며, 관할 법원은 서울중앙지방법원으로 합니다.</p>
+
+    <p style="margin-top:16px; color:#888; font-size:13px;">시행일: 2026년 4월 1일</p>
+  </div>
+
+  <!-- 개인정보처리방침 -->
+  <div class="section" id="privacy">
+    <h2>개인정보처리방침</h2>
+    <p>한판(HANPAN)(이하 "회사")은 개인정보보호법에 따라 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.</p>
+
+    <p><strong>1. 수집하는 개인정보 항목</strong><br>
+    - 필수: 이메일, 비밀번호, 아이디(닉네임), 성별, 지역, 전화번호<br>
+    - 선택: 프로필 사진, 자기소개, 계좌 정보(정산용)<br>
+    - 카카오/구글 로그인 시: 닉네임, 이메일, 프로필 사진</p>
+
+    <p><strong>2. 개인정보의 수집 및 이용 목적</strong><br>
+    - 회원 가입 및 관리, 본인 확인<br>
+    - 서비스 제공 (클래스 예약, 채팅, 결제)<br>
+    - 고객 문의 대응 및 공지사항 전달</p>
+
+    <p><strong>3. 개인정보의 보유 및 이용 기간</strong><br>
+    회원 탈퇴 시 즉시 파기합니다. 단, 관련 법령에 의해 보존이 필요한 경우 해당 기간 동안 보관합니다.<br>
+    - 전자상거래법에 따른 거래 기록: 5년<br>
+    - 소비자 불만 또는 분쟁 처리 기록: 3년</p>
+
+    <p><strong>4. 개인정보의 제3자 제공</strong><br>
+    회사는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, 법령에 의한 요청이 있는 경우 예외로 합니다.</p>
+
+    <p><strong>5. 개인정보 처리의 위탁</strong><br>
+    결제 처리를 위해 PG사(토스페이먼츠 등)에 결제 정보를 위탁합니다.</p>
+
+    <p><strong>6. 이용자의 권리</strong><br>
+    이용자는 언제든지 자신의 개인정보를 조회, 수정, 삭제할 수 있으며, 회원 탈퇴를 통해 개인정보 처리 정지를 요청할 수 있습니다.</p>
+
+    <p><strong>7. 개인정보 보호책임자</strong><br>
+    성명: 유창수 / 이메일: youzang21@daum.net</p>
+
+    <p style="margin-top:16px; color:#888; font-size:13px;">시행일: 2026년 4월 1일</p>
+  </div>
+
+  <!-- 환불 정책 -->
+  <div class="section" id="refund">
+    <h2>환불 및 취소 정책</h2>
+    <p>한판 서비스의 결제 취소 및 환불은 아래 기준에 따릅니다.</p>
+
+    <p><strong>원데이클래스 환불 기준</strong></p>
+    <table class="refund-table">
+      <thead>
+        <tr><th>취소 시점</th><th>환불 비율</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>결제 후 30분 이내</td><td>전액 환불 (100%)</td></tr>
+        <tr><td>모임 4일 전 이상</td><td>전액 환불 (100%)</td></tr>
+        <tr><td>모임 1~3일 전</td><td>50% 환불</td></tr>
+        <tr><td>모임 당일</td><td>환불 불가</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:20px;"><strong>호스트(개설자) 취소</strong><br>
+    호스트가 모임을 취소할 경우 모든 참가자에게 전액 환불됩니다.</p>
+
+    <p><strong>프리미엄 구독 환불</strong><br>
+    - 구독 후 7일 이내 미사용 시 전액 환불<br>
+    - 구독 기간 중 해지 시 잔여 기간에 대한 환불 없음<br>
+    - 해지 후 구독 기간 종료 시까지 서비스 이용 가능</p>
+
+    <p><strong>환불 처리 기간</strong><br>
+    환불 승인 후 3~5 영업일 이내 결제 수단으로 환불됩니다.</p>
+
+    <p><strong>환불 문의</strong><br>
+    이메일: youzang21@daum.net</p>
+  </div>
+
+  <!-- 사업자 정보 (Footer) -->
+  <footer>
+    <div class="biz-info">
+      <p><strong>사업자 정보</strong></p>
+      <p>상호: 한판(HANPAN)</p>
+      <p>대표자: 유창수</p>
+      <p>사업자등록번호: 865-15-02831</p>
+      <p>업태: 도매 및 소매업, 정보통신업</p>
+      <p>종목: 전자상거래 소매 중개업, 컴퓨터 프로그래밍 서비스업</p>
+      <p>소재지: 서울특별시 관악구 남부순환로 1624, 5층 502호(신림동)</p>
+      <p>이메일: youzang21@daum.net</p>
+      <p>개업일: 2026년 4월 1일</p>
+    </div>
+    <p style="margin-top: 24px;">&copy; 2026 한판(HANPAN). All rights reserved.</p>
+    <p><a href="#terms">이용약관</a> | <a href="#privacy">개인정보처리방침</a> | <a href="#refund">환불정책</a></p>
+  </footer>
+
+</body>
+</html>
